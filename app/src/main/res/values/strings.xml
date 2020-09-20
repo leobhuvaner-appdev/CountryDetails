@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">SampleCountryDetails</string>
+    <string name="country_list_page_title">Countries List</string>
+    <string name="country_detail_title">Country Detail</string>
+    <string name="no_internet_title">No Internet</string>
+    <string name="capital_hint">Capital :-</string>
+    <string name="region_hint">Region :-</string>
+    <string name="sub_region_hint">Sub Region :-</string>
+    <string name="area_hint">Area :-</string>
+    <string name="population_hint">Population :-</string>
+    <string name="country_hint">India</string>
+    <string name="internet_error_message">Please check your internet connectivity</string>
+    <string name="no_internet">No internet connection!</string>
+    <string name="check_network">Please check your internet connection and try again</string>
+    <string name="retry">RETRY</string>
+</resources>

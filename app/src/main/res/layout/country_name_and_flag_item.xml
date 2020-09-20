@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    tools:context=".activity.SplashScreenActivity">
+
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="10dp"
+    android:layout_marginStart="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginEnd="10dp"
+    android:elevation="10dp"
+    card_view:cardBackgroundColor="#fff"
+    card_view:cardCornerRadius="15dp"
+    card_view:cardElevation="10dp">
+
+    <RelativeLayout
+        android:id="@+id/cardview_rel_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/country_flage_img"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="10dp"
+        android:src="@mipmap/ic_launcher_round"/>
+
+    <TextView
+        android:id="@+id/country_name_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="India"
+        android:fontFamily="@font/capriola"
+        android:gravity="center_vertical"
+        android:layout_toEndOf="@+id/country_flage_img"
+        android:layout_alignTop="@+id/country_flage_img"
+        android:layout_alignBottom="@+id/country_flage_img"
+        android:layout_marginLeft="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/text_color"
+        android:textSize="18dp" />
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
