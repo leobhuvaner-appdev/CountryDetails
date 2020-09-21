@@ -1,7 +1,6 @@
 package com.example.samplecountrydetails.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
-import android.app.Activity;
 import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -14,6 +13,7 @@ public class ViewSingleCountryDetailsActivity extends AppCompatActivity {
     private TextView separateCountryNameTV, capitalTV, regionTV, subRegionTV, areaTV, populationTV;
     private ImageView flagImage;
     private CountryDetailsModel countryDetailsModel;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,7 +40,6 @@ public class ViewSingleCountryDetailsActivity extends AppCompatActivity {
                     .with(this)
                     .setPlaceHolder(R.mipmap.ic_launcher, R.mipmap.ic_launcher)
                     .load(flagImageUrl, flagImage);
-
 
             separateCountryNameTV.setText(countryName);
             capitalTV.setText(capitalValue);

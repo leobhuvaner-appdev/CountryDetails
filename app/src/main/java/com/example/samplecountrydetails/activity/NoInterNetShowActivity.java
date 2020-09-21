@@ -7,7 +7,6 @@ import android.content.Intent;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Bundle;
-import android.os.Handler;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -19,13 +18,13 @@ import com.google.android.material.snackbar.Snackbar;
 
 public class NoInterNetShowActivity extends AppCompatActivity implements View.OnClickListener {
     private Button mRetryBtn;
-    private LinearLayout linearLayout;
+    private LinearLayout mLinearLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_no_inter_net_show);
-        linearLayout = findViewById(R.id.no_internet_lin_layout);
+        mLinearLayout = findViewById(R.id.no_internet_lin_layout);
         mRetryBtn = findViewById(R.id.retry_button);
         mRetryBtn.setOnClickListener(this);
 
@@ -45,7 +44,7 @@ public class NoInterNetShowActivity extends AppCompatActivity implements View.On
         if (isConnected()) {
             moveToSplashActivity();
         } else {
-            Snackbar snackbar = Snackbar.make(linearLayout,"You are offline",Snackbar.LENGTH_SHORT);
+            Snackbar snackbar = Snackbar.make(mLinearLayout,"You are offline",Snackbar.LENGTH_SHORT);
             snackbar.show();
         }
     }

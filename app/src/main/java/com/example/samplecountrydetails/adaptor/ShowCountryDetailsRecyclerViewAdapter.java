@@ -2,18 +2,12 @@ package com.example.samplecountrydetails.adaptor;
 
 import android.app.Activity;
 import android.content.Context;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
-import android.graphics.drawable.Drawable;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Filter;
 import android.widget.ImageView;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -21,17 +15,10 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.ahmadrosid.svgloader.SvgLoader;
 import com.example.samplecountrydetails.R;
-import com.example.samplecountrydetails.activity.ListofCountriesActivity;
 import com.example.samplecountrydetails.listener.CallBack;
 import com.example.samplecountrydetails.model.CountryNameFlagModel;
 
-import java.io.IOException;
-import java.io.InputStream;
-import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
-import java.net.URL;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 
 public class ShowCountryDetailsRecyclerViewAdapter extends RecyclerView.Adapter<ShowCountryDetailsRecyclerViewAdapter.ViewHolder> {
@@ -42,8 +29,8 @@ public class ShowCountryDetailsRecyclerViewAdapter extends RecyclerView.Adapter<
     private Activity activity;
     public CallBack callBack;
 
-    public ShowCountryDetailsRecyclerViewAdapter(Context context, List<CountryNameFlagModel> _countryNameFlagModelList, Activity _activity, CallBack _callBack) {
-        this.context = context;
+    public ShowCountryDetailsRecyclerViewAdapter(Context _context, List<CountryNameFlagModel> _countryNameFlagModelList, Activity _activity, CallBack _callBack) {
+        this.context = _context;
         this.countryNameFlagModelList = _countryNameFlagModelList;
         countryNameFlagModelListFull = new ArrayList<>(countryNameFlagModelList);
         this.activity = _activity;

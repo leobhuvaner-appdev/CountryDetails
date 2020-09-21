@@ -2,7 +2,6 @@ package com.example.samplecountrydetails.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.SearchView;
-import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -15,7 +14,6 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.inputmethod.EditorInfo;
-import android.widget.Toast;
 
 import com.example.samplecountrydetails.R;
 import com.example.samplecountrydetails.adaptor.ShowCountryDetailsRecyclerViewAdapter;
@@ -40,7 +38,6 @@ public class ListofCountriesActivity extends AppCompatActivity implements CallBa
     private ApiInterface apiInterface;
     public static final String TAG = "ListofCountriesActivity";
     private List<CountryNameFlagModel> countryNameFlagModelList;
-    private List<CountryDetailsModel> countryDetailsModelList;
     private ShowCountryDetailsRecyclerViewAdapter showCountryDetailsRecyclerViewAdapter;
     private HashMap<String, CountryDetailsModel> countryDetailsHashMap;
     private Activity activity;
@@ -52,7 +49,6 @@ public class ListofCountriesActivity extends AppCompatActivity implements CallBa
         callBack = this;
         apiInterface = ApiClient.getClient().create(ApiInterface.class);
         countryNameFlagModelList = new ArrayList<>();
-        countryDetailsModelList = new ArrayList<>();
         countryDetailsHashMap = new HashMap<>();
         fetchAllCountiesDetails();
         activity = this;
