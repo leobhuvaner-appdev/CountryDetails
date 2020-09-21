@@ -39,11 +39,11 @@ public class ListofCountriesActivity extends AppCompatActivity implements CallBa
     CallBack callBack;
     private ApiInterface apiInterface;
     public static final String TAG = "ListofCountriesActivity";
-    List<CountryNameFlagModel> countryNameFlagModelList;
-    List<CountryDetailsModel> countryDetailsModelList;
+    private List<CountryNameFlagModel> countryNameFlagModelList;
+    private List<CountryDetailsModel> countryDetailsModelList;
     private ShowCountryDetailsRecyclerViewAdapter showCountryDetailsRecyclerViewAdapter;
-    HashMap<String, CountryDetailsModel> countryDetailsHashMap;
-    Activity activity;
+    private HashMap<String, CountryDetailsModel> countryDetailsHashMap;
+    private Activity activity;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

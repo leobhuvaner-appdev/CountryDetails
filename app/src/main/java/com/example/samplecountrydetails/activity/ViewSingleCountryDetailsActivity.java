@@ -11,9 +11,9 @@ import com.example.samplecountrydetails.R;
 import com.example.samplecountrydetails.model.CountryDetailsModel;
 
 public class ViewSingleCountryDetailsActivity extends AppCompatActivity {
-    TextView separateCountryNameTV, capitalTV, regionTV, subRegionTV, areaTV, populationTV;
-    ImageView flagImage;
-    CountryDetailsModel countryDetailsModel;
+    private TextView separateCountryNameTV, capitalTV, regionTV, subRegionTV, areaTV, populationTV;
+    private ImageView flagImage;
+    private CountryDetailsModel countryDetailsModel;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

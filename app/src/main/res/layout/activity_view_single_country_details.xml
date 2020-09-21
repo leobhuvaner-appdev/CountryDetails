@@ -5,14 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fillViewport="true">
+
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".activity.ViewSingleCountryDetailsActivity">
 
-    <!--county image-->
     <ImageView
         android:id="@+id/separate_country_flag"
         android:layout_width="200dp"
@@ -25,7 +23,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <!--county name-->
     <TextView
         android:id="@+id/separate_country_name"
         android:layout_width="match_parent"
@@ -43,7 +40,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/separate_country_flag" />
 
-    <!--county capital-->
     <TextView
         android:id="@+id/capital_tv"
         android:layout_width="wrap_content"
@@ -73,7 +69,6 @@
         app:layout_constraintStart_toStartOf="@+id/sub_region_value"
         app:layout_constraintTop_toTopOf="@+id/capital_tv" />
 
-    <!--county region-->
     <TextView
         android:id="@+id/region_tv"
         android:layout_width="wrap_content"
@@ -89,7 +84,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/capital_tv" />
 
-    <!--county sub region-->
     <TextView
         android:id="@+id/region_value"
         android:layout_width="wrap_content"
@@ -136,7 +130,6 @@
         app:layout_constraintStart_toEndOf="@+id/sub_region_tv"
         app:layout_constraintTop_toTopOf="@+id/sub_region_tv" />
 
-    <!--county area-->
     <TextView
         android:id="@+id/area_tv"
         android:layout_width="wrap_content"
@@ -166,7 +159,6 @@
         app:layout_constraintStart_toStartOf="@+id/sub_region_value"
         app:layout_constraintTop_toTopOf="@+id/area_tv" />
 
-    <!--county population-->
     <TextView
         android:id="@+id/population_tv"
         android:layout_width="wrap_content"

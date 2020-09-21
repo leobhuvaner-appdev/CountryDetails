@@ -36,10 +36,10 @@ import java.util.List;
 
 public class ShowCountryDetailsRecyclerViewAdapter extends RecyclerView.Adapter<ShowCountryDetailsRecyclerViewAdapter.ViewHolder> {
 
-    Context context;
-    List<CountryNameFlagModel> countryNameFlagModelList;
-    List<CountryNameFlagModel> countryNameFlagModelListFull;
-    Activity activity;
+    private Context context;
+    private List<CountryNameFlagModel> countryNameFlagModelList;
+    private List<CountryNameFlagModel> countryNameFlagModelListFull;
+    private Activity activity;
     public CallBack callBack;
 
     public ShowCountryDetailsRecyclerViewAdapter(Context context, List<CountryNameFlagModel> _countryNameFlagModelList, Activity _activity, CallBack _callBack) {

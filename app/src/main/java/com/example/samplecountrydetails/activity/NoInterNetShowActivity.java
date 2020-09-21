@@ -18,15 +18,16 @@ import com.google.android.material.snackbar.Snackbar;
 
 
 public class NoInterNetShowActivity extends AppCompatActivity implements View.OnClickListener {
-    Button retryBtn;
-    LinearLayout linearLayout;
+    private Button mRetryBtn;
+    private LinearLayout linearLayout;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_no_inter_net_show);
         linearLayout = findViewById(R.id.no_internet_lin_layout);
-        retryBtn = findViewById(R.id.retry_button);
-        retryBtn.setOnClickListener(this);
+        mRetryBtn = findViewById(R.id.retry_button);
+        mRetryBtn.setOnClickListener(this);
 
     }
 

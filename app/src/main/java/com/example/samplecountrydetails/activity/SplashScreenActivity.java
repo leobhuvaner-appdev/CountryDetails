@@ -25,7 +25,7 @@ import com.google.android.material.snackbar.Snackbar;
 
 
 public class SplashScreenActivity extends AppCompatActivity{
-    ConstraintLayout constraintLayout;
+    private ConstraintLayout constraintLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
